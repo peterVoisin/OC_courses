@@ -5,4 +5,4 @@ Une demo de git qui se passe bien
 
 Ajout d'une modification depuis GitHub
 
-Nouvel ajout local
+Nouvel ajout local et ajout Git
