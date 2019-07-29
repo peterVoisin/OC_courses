@@ -1,0 +1,45 @@
+a{
+  text-decoration: none;
+  color: #668CFF;
+}
+
+a:hover{
+  color: #F99E40
+}
+
+#bloc{
+  font-family: sans-serif;
+  background-color: #F9F9F9;
+  width: 500px;
+  margin: 30px auto 20px auto;
+  padding: 0 30px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px
+}
+
+div{
+  text-align: center;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+p#deco{
+  background-color: #E6E6E6;
+  width: 150px;
+  margin: auto;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px
+}
+
+fieldset{
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  background-color: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+}
