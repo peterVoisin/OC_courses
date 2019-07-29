@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>CV HTML5 - Exercice 3</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div id="card">
+                <a href="images/photoID.png"><img src="images/photoID-min.png" alt="Photo d'identitée" /></a>
+                <div id="cardtxt">
+                    <h1>Peter Nivois</h1>
+                    <p>Développeur Web Junior</p>
+                </div>
+            </div>
+
+            <nav>
+                <div class="menu">
+                    <img src="images/home.png" alt="icon home"><a href="#accueil">Accueil</a>
+                </div>
+                <div class="menu">
+                    <img src="images/cv.png" alt="icon paper"><a href="#experience">CV</a>
+                </div>
+                <div class="menu">
+                    <img src="images/letter.png" alt="icon letter"><a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <div id="social">
+                <a href=""><img src="images/twitter.png" alt="icon twitter"></a>
+                <a href=""><img src="images/facebook.png" alt="icon facebook"></a>
+                <a href=""><img src="images/letter.png" alt="icon letter"></a>
+            </div>
+        </header>
+
+        <section>
+
+            <article id="accueil">
+
+                <h2>Developpeur Web Junior</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus.</p>
+
+            </article>
+
+            <article id="cv">
+
+                <div class="parties">
+
+                    <h2 id="experience" class="h2">Mon experience</h2>
+
+                    <ul class="ul">
+                        <li class="ul-li"><strong>De 20013 à aujourd'hui : </strong>Technicien de maintenance Informatique :
+                            <ul class="ul-li-details">
+                                <li class="ul-li-details-li">Installation/Administration de serveurs virtualisés sous Proxmox (Debian, Windows Server 2012)</li>
+                                <li class="ul-li-details-li">Installation/Administration du réseau WAN/LAN/WLAN/VPN et équipement routeur/firewall</li>
+                                <li class="ul-li-details-li">Gestion du parc informatique et de la téléphonie (installation, maintenance, réparation)</li>
+                                <li class="ul-li-details-li">Mise en place de services Web (FTP, mail, messagerie, agendas partagés, gestion de parc et incident) – Gestion des achats et des relations avec les fournisseurs</li>
+                                <li class="ul-li-details-li">Mise en place et gestion des sauvegardes – Rédaction de procédures</li>
+                            </ul>
+                        </li>
+                        <li class="ul-li"><strong>De 2008 à 2013 : </strong>Opérateur PAO</li>
+                        <li class="ul-li"><strong>De 2006 à 2008 : </strong>Conducteur rotative et presse Offset</li>
+                        <li><strong>De 2004 à 2006 : </strong>Intérim</li>
+                    </ul>
+
+                </div>
+
+                <div class="parties">
+
+                    <h2 class="h2">Mes competences</h2>
+
+                    <ul class="ul">
+                        <li class="ul-li">Administration système Linux et Windows Server</li>
+                        <li class="ul-li">Administration Réseaux TCP/IP</li>
+                        <li class="ul-li">Administration Base de données</li>
+                        <li class="ul-li">Scripting Shell (<a href="https://en.wikipedia.org/wiki/Shell_script">Information</a>)</li>
+                        <li>Suite Adobe CC pour mise en page d'imprimé.</li>
+                    </ul>
+
+                </div>
+
+                <div class="parties">
+
+                    <h2 class="h2">Ma formation</h2>
+
+                    <ul class="ul">
+                        <li class="ul-li"><strong>BAC+2</strong> – Technicien de maintenance informatique et réseau, en CFA à Paris.</li>
+                        <li><strong>BEP/BAC Pro</strong> – Opérateur PAO en Lycée Professionnel</li>
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section>
+
+            <article id="contact">
+
+                <h2 class="h2">Contact</h2>
+
+                <form>
+                    <p id="pdata">
+                        <input class="input" type="text" name="nom" placeholder="Nom" required />
+                        <input class="input" type="email" name="email" placeholder="Email" required />
+                    </p>
+                    <textarea class="textarea" name="message" placeholder="Message" required ></textarea>
+                    <input id="submit" type="submit" value="Envoyer" />
+                </form>
+            </article>
+
+            <footer>
+                © All rights reserved
+            </footer>
+
+        </section>
+
+    </body>
+</html>
