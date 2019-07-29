@@ -1,0 +1,25 @@
+
+.englobeTout
+{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.envoyer
+{
+	display: flex;
+	justify-content: center;
+}
+
+.message
+{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+
+}

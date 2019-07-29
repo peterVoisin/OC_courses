@@ -1,0 +1,65 @@
+*{
+    font-family: sans-serif;
+    color: #3C3C3C
+}
+a{
+    text-decoration: none;
+    color: #F99E40
+}
+form{
+    text-align: center;
+    background-color: #F9F9F9;
+    width: 500px;
+    margin: 30px auto 20px auto;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px
+}
+form input{
+    margin: 10px 0;
+}
+.error{
+    color: indianred;
+    font-size: 0.6em;
+}
+#submit{
+    width: 100px;
+    color: #F99E40;
+    margin-top: 5px;
+}
+#email{
+    width: 180px;
+}
+.sup{
+    font-variant-position: super;
+    color: #A0A0A0
+}
+div{
+    text-align: center;
+    background-color: #F9F9F9;
+    width: 500px;
+    margin: 30px auto 20px auto;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px
+}
+.msg{
+    margin: 25px;
+    padding-left: 8px;
+    border-left: 5px solid #E6E6E6
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+.msg strong{
+    color: #F99E40
+}
+.msg span{
+    font-size: 80%;
+    color: #A0A0A0
+}
+.info{
+    font-size: 0.8em;
+    color: #A0A0A0
+}
