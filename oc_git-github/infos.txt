@@ -1,2 +1,2 @@
-Gérez votre code avec Git et GitHub
+Cours : Gérez votre code avec Git et GitHub
 https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github
