@@ -1,2 +1,2 @@
 # OC_courses
-OC - Cours : Codes et exercices réalisés lors de mes sessions sur OpenClassrooms.com
+OC - Cours : Codes, exercices et activités réalisés lors de mes sessions sur OpenClassrooms.com
