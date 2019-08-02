@@ -1,2 +1,2 @@
 # OC_courses
-OC - Cours : Gérez votre code avec Git et GitHub
+OC - Cours : Codes et exercices réalisés lors des formations OpenClassrooms
