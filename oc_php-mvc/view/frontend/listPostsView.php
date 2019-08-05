@@ -24,5 +24,5 @@ while ($data = $posts->fetch())
 }
 $posts->closeCursor();
 $content = ob_get_clean();
-require('template.php');
+require('view/frontend/template.php');
 ?>
