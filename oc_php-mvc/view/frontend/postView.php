@@ -13,7 +13,7 @@ ob_start();
   <p><?= nl2br(htmlspecialchars($post['content'])) ?></p>
 </div>
 
-<h2>commentaires</h2>
+<h2>Commentaires</h2>
 
 <?php
 while ($comment = $comments->fetch()) {
@@ -25,3 +25,18 @@ while ($comment = $comments->fetch()) {
 $content = ob_get_clean();
 require('view/frontend/template.php');
 ?>
+
+<form action="index.php?action=addComment&amp;id=<?= $post['id'] ?>" method="post">
+  <div>
+    <label for="author">Auteur</label><br/>
+    <input type="text" id="author" name="author">
+  </div>
+  <div>
+    <label for="comment">Commentaire</label><br/>
+    <textarea id="comment" name="comment" rows="8" cols="80"></textarea>
+    <!--<textarea id="comment" name="comment"></textarea>-->
+  </div>
+  <div>
+    <input type="submit" />
+  </div>
+</form>
