@@ -7,16 +7,6 @@ a:hover{
   color: #F99E40
 }
 
-#bloc{
-  font-family: sans-serif;
-  background-color: #F9F9F9;
-  width: 500px;
-  margin: 30px auto 20px auto;
-  padding: 0 30px;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px
-}
-
 div{
   text-align: center;
   width: 500px;
@@ -27,14 +17,6 @@ p{
 	font-size: 1.2em;
 }
 
-p#deco{
-  background-color: #E6E6E6;
-  width: 150px;
-  margin: auto;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px
-}
-
 fieldset{
   text-align: left;
   margin-bottom: 30px;
@@ -42,4 +24,47 @@ fieldset{
   background-color: white;
   border: 1px solid #E6E6E6;
   border-radius: 10px;
+}
+
+ul{
+  font-size: 0.8em;
+  margin: 20px 0;
+}
+
+ul li{
+  list-style: none;
+  margin: 5px 0 5px -40px;
+}
+
+#bloc{
+  font-family: sans-serif;
+  background-color: #F9F9F9;
+  width: 500px;
+  margin: 30px auto 20px auto;
+  padding: 0 30px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px
+}
+
+#warning{
+  color: orange;
+}
+
+#logout{
+  background-color: #E6E6E6;
+  font-size: 1.2em;
+  width: 150px;
+  margin: 20px auto;
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px
+}
+
+.bouton{
+  background-color: #E6E6E6;
+  font-size: 0.8em;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px
 }
