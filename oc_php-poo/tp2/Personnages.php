@@ -10,7 +10,7 @@ abstract class Personnage
 
   // Constante renvoyée par méthode "frapper" si on se frappe
   const CEST_MOI = 1;
-  // Constante renvoyée par méthode "frapper" si on a tué le perso en frappant
+  // Constante renvoyée par méthode "frapper" si on a tué le perso à frapper
   const PERSO_TUE = 2;
   // Constante renvoyée par méthode "frapper" si on a bien frappé
   const PERSO_FRAPPE = 3;
@@ -82,7 +82,7 @@ abstract class Personnage
 
     $heures .= $heures <= 1 ? ' heure' : ' heures';
     $minutes .= $minutes <= 1 ? ' minute' : ' minutes';
-    $secondes .= $secondes <= 1 ? ' secondes' : ' secondes';
+    $secondes .= $secondes <= 1 ? ' seconde' : ' secondes';
 
     return $heures .', '.$minutes.' et '.$secondes;
   }
