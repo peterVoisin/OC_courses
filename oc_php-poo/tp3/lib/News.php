@@ -16,14 +16,14 @@ class News
   const CONTENU_INVALIDE = 3;
 
   // Constructeur
-  public function __construct($valeur = [])
+  public function __construct($valeurs = [])
   {
-    if(!empty($valeur)) { // Si $valeurs n'est pas vide, on hydrate
-      $this->hydrate($valeur);
+    if(!empty($valeurs)) { // Si $valeurss n'est pas vide, on hydrate
+      $this->hydrate($valeurs);
     }
   }
 
-  // Hydratation avec en paramètre le array $valeur
+  // Hydratation avec en paramètre le array $valeurs
   public function hydrate($donnees)
   {
     foreach ($donnees as $attribut => $valeur) {
@@ -83,7 +83,7 @@ class News
 
   public function setDateAjout(DateTime $dateAjout)
   {
-    $this->$dateAjout = $dateAjout;
+    $this->dateAjout = $dateAjout;
   }
 
   public function setDateModif(DateTime $dateModif)
