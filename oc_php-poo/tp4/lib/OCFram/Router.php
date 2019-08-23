@@ -9,31 +9,37 @@ class Router
 
   public function addRoute(Route $route)
   {
-    if (!in_array($route, $this->routes)) {
+    if (!in_array($route, $this->routes))
+    {
       $this->routes[] = $route;
     }
   }
 
   public function getRoute($url)
   {
-    foreach ($$this->routes as $route) {
+    foreach ($this->routes as $route)
+    {
       // Si la route correspond à l'URL
-      if (($varsValues = $route->match($url)) !== false) {
-        //Si ell a des varaibles
-        if ($route->hasVars()) {
-          $varsNames = $route->varsName();
+      if (($varsValues = $route->match($url)) !== false)
+      {
+        // Si elle a des variables
+        if ($route->hasVars())
+        {
+          $varsNames = $route->varsNames();
           $listVars = [];
 
           // On crée un nouveau tableau clé/valeur
           // (clé = nom de la variable, valeur = sa valeur)
-          foreach ($$varsValues as $key => $match) {
-            // La première valeur contient entièrement la cahine capturée (voir la doc sur preg_match)
-            if ($key !== 0) {
-              $listVars[$varsNames[$key  1]] = $match;
+          foreach ($varsValues as $key => $match)
+          {
+            // La première valeur contient entièrement la chaine capturée (voir la doc sur preg_match)
+            if ($key !== 0)
+            {
+              $listVars[$varsNames[$key - 1]] = $match;
             }
           }
 
-          // On assigne ce talbeau à la route
+          // On assigne ce tableau de variables � la route
           $route->setVars($listVars);
         }
 

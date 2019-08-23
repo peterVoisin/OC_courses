@@ -31,20 +31,20 @@ class User
   public function setAttribute($attr, $value)
   {
     $_SESSION[$attr] = $value;
-    }
+  }
 
-    public function setAuthenticated($authenticated = true)
+  public function setAuthenticated($authenticated = true)
+  {
+    if (!is_bool($authenticated))
     {
-      if (!is_bool($authenticated)) {
-        throw new \InvalidArgumentException('La valeur spécifiée à la méthode User::setAuthenticated() doit être un booléen');
-      }
-
-      $_SESSION['auth'] = $authenticated;
+      throw new \InvalidArgumentException('La valeur spécifiée à la méthode User::setAuthenticated() doit être un boolean');
     }
 
-    public function setFlash($value)
-    {
-      $_SESSION['flash'] = $value;
-    }
+    $_SESSION['auth'] = $authenticated;
+  }
+
+  public function setFlash($value)
+  {
+    $_SESSION['flash'] = $value;
   }
 }

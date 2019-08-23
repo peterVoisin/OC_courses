@@ -1,7 +1,7 @@
 <?php
 namespace OCFram;
 
-class HTTPResponse extends ApplicationComponent
+class HTTPResponse
 {
   protected $page;
 
@@ -28,7 +28,7 @@ class HTTPResponse extends ApplicationComponent
 
   public function send()
   {
-    // Actuellement, cette ligne a pu de sens dans votre esprit.
+    // Actuellement, cette ligne a peu de sens dans votre esprit.
     // Promis, vous saurez vraiment ce qu'elle fait d'ici la fin du chapitre
     // (bien que je suis sûr que les noms choisis sont assez explicites !).
     exit($this->page->getGeneratedPage());
@@ -39,7 +39,7 @@ class HTTPResponse extends ApplicationComponent
     $this->page = $page;
   }
 
-  // Changement par rapport à la fonction setCookie() : le dernier argument est par défaut à true
+  // Changement par rapport à la fonction setcookie() : le dernier argument est par défaut à true
   public function setCookie($name, $value = '', $expire = 0, $path = null, $domain = null, $secure = false, $httpOnly = true)
   {
     setcookie($name, $value, $expire, $path, $domain, $secure, $httpOnly);

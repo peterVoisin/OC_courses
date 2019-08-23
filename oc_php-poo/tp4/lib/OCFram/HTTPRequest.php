@@ -1,7 +1,7 @@
 <?php
 namespace OCFram;
 
-class HttpRequest
+class HTTPRequest
 {
   public function cookieData($key)
   {
