@@ -1,4 +1,4 @@
-<? php
+<?php
 class PersonnageManager
 {
   private $db; // Instance de PDO
@@ -38,7 +38,7 @@ class PersonnageManager
     }
     // Sinon, on vérifie l'existance du nom
     $q = $this->db->prepare('SELECT COUNT(*) FROM personnages_v2 WHERE nom = :nom');
-    $q->execute(['nom', => $info]);
+    $q->execute(['nom' => $info]);
 
     return (bool) $q->fetchColumn();
   }
@@ -83,6 +83,6 @@ class PersonnageManager
     $q->bindValue('atout', $perso->atout(), PDO::PARAM_INT);
     $q->bindValue('degats', $perso->degats(), PDO::PARAM_INT);
     $q->bindValue('timeEndormi', $perso->timeEndormi(), PDO::PARAM_INT);
-    $q->execute(;)
+    $q->execute();
   }
 }

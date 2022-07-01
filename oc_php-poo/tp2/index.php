@@ -44,7 +44,7 @@ if (isset($_POST['creer']) && isset($_POST['nom'])) { // Si création perso
 }
 elseif (isset($_POST['utiliser']) && isset($_POST['nom'])) { // Si utilise perso
   if ($manager->exists($_POST['nom'])) { // Si il existe
-    $perso = manager->get($_POST['nom']);
+    $perso = $manager->get($_POST['nom']);
   } else {
     $message = 'Ce personnage n\'existe pas !';
   }
@@ -177,7 +177,6 @@ if (empty($retourPersos)) {
     </fieldset>
 <?php
 } else {
-}
 ?>
     <form action="" method="post">
       <p>Nom : <input type="text" name="nom" maxlength="50"/> <input type="submit" value="Utiliser ce personnage" name="utiliser"/><br/>

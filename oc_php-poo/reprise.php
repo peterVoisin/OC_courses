@@ -30,7 +30,7 @@ class Personnage
   // Mutateur chargé de modifier l'attribut $_force.
   public function setForce($force)
   {
-    if (in_array($force, [self::FORCE_PETITE], self::FORCE_MOYENNE, self::[FORCE_GRANDE])) {
+    if (in_array($force, [self::FORCE_PETITE, self::FORCE_MOYENNE, self::FORCE_GRANDE])) {
       $this->_force = $force;
     }
   }

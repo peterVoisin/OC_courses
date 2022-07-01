@@ -21,13 +21,13 @@ class NewsManagerMySQLi extends NewsManager
   }
 
   // NewsManager::count()
-  abstract public function count()
+  public function count()
   {
     return $this->db->query('SELECT id FROM news')->num_rows;
   }
 
   // NewsManager::delete()
-  abstract public function delete($id)
+  public function delete($id)
   {
     $id = (int) $id;
     $requete = $this->db->prepare('DELETE FROM news WHERE id = ?');
@@ -36,13 +36,13 @@ class NewsManagerMySQLi extends NewsManager
   }
 
   // NewsManager::getList()
-  abstract public function getList($debut = -1,$limite = -1)
+  public function getList($debut = -1,$limite = -1)
   {
     $sql = 'SELECT id,auteur,titre,contenu,dateAjout,dateModif FROM news ORDER BY id DESC';
 
     // Vérifier l'intégrité des paramètres fournis
     if ($debut != -1 || $limite != -1) {
-      sql .= ' LIMIT '.(int) $limite.' OFFSET '.(int) $debut;
+      $sql .= ' LIMIT '.(int) $limite.' OFFSET '.(int) $debut;
     }
 
     $requete = $this->db->query($sql);
@@ -52,7 +52,7 @@ class NewsManagerMySQLi extends NewsManager
       $news->setDateAjout(new DateTime($news->dateAjout()));
       $news->setDateModif(new DateTime($news->dateModif()));
 
-      $listeNews[ = $news;]
+      $listeNews = $news;
     }
 
     return $listeNews;

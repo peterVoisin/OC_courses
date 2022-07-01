@@ -69,7 +69,7 @@ class PersonnagesManager {
 	 * @return bool
 	 */
 
-	public final  function exists(int|string $info) {
+	public final  function exists(int $info) {
 
 	}
 
@@ -81,7 +81,7 @@ class PersonnagesManager {
 	 * @return Personnage
 	 */
 
-	public final  function get(int|string $info) {
+	public final  function get(string $info) {
 
 	}
 
